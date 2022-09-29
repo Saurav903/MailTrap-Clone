@@ -88,6 +88,21 @@ signup.addEventListener("click", myfun1);
 function myfun1(){
     document.location = "signup.html";
 }
+let nav_login = document.querySelector(".nav_login");
+nav_login.addEventListener("click", myfun33);
+
+function myfun33(){
+    document.location = "login.html";
+}
+let sign2 = document.querySelector(".sign2");
+sign2.addEventListener("click", signup2);
+
+function signup2(){
+    document.location = "signup.html";
+}
+
+let last = document.querySelector("#last");
+last.addEventListener("click", myfun1)
 // window.onscroll = function(){
 //     myfunction()
 // };
