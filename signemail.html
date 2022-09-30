@@ -91,7 +91,7 @@
 
     form.addEventListener("submit", datastore);
 
-    let arrData = [];
+    // let arrData = [];
 
     function datastore(e) {
         e.preventDefault();
@@ -99,11 +99,11 @@
             alert("Fill the form");
         } else {
             let obj = {
-            email: form.email.value,
-            password: form.password.value,
+            "email": form.email.value,
+            "password": form.password.value,
             };
-            arrData.push(obj);
-            localStorage.setItem("input", JSON.stringify(arrData));
+            // arrData.push(obj);
+            localStorage.setItem("input", JSON.stringify(obj));
             document.location = "login.html";
          }
     }
