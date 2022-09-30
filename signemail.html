@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="navbar1">
+        <div>
+            <a href="index.html"><img src="https://mailtrap.io/wp-content/uploads/2021/04/mailtrap-new-logo.svg" alt=""></a>
+        </div>
+        <div>
+            <button class="nav_login">Log In</button>
+            <button class="nav_signup">Sign Up</button>
+        </div>
+    </div>
+    <div id="container">
+        <div class="left">
+            
+            <form>
+                <h1>Create Free Account</h1>
+                <label for="">Email</label>
+                <input id="email"  type="email" placeholder="Enter email"/>
+                <label for="">Password</label>
+                <input id="password"  type="password" placeholder="Enter Password" />
+                <label for="">Confirmation</label>
+                <input id="confirmation" type="password" placeholder="confirmation" />
+                <input value="submit" type="submit">
+            </form>
+            <div class="mid">
+                <p>By creating a Mailtrap account, you agree to our</p>
+                <a href="#">Terms of Service and Privacy Policy</a>
+                <p>We'll occasionally send you account related emails.</p>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div><img src="https://assets.mailtrap.io/packs/assets/landing/signup-29d04f096f43afe622ed.svg" alt=""></div>
+            <div class="right_flex">
+                <img src="https://assets.mailtrap.io/packs/assets/landing/no-cc-f64815040928cb2cd45e.svg" alt="">
+                <h4>No credit card needed</h4>
+            </div>
+            <div class="right_flex">
+                <img src="https://assets.mailtrap.io/packs/assets/landing/no-contract-6c7fcc24afc64e708f1d.svg" alt="">
+                <h4>No contract needed</h4>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <h3>Mailtrap</h3>
+            <ul>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Changelog</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Navigational Information</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Railsware Experience</h3>
+            <ul>
+                <li><a href="#">Mailtrap Blog</a></li>
+                <li><a href="#">Coupler.io</a></li>
+                <li><a href="#">Smart Checklist for Jira</a></li>
+                <li><a href="#">Careers-Railsware Hiring</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">email: support@mailtrap.io</a></li>
+                <div class="social">
+                    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", datastore);
+
+    // let arrData = [];
+
+    function datastore(e) {
+        e.preventDefault();
+        if(form.email.value=="" || form.password.value=="" || form.confirmation.value=="") {
+            alert("Fill the form");
+        } else {
+            let obj = {
+            "email": form.email.value,
+            "password": form.password.value,
+            };
+            // arrData.push(obj);
+            localStorage.setItem("input", JSON.stringify(obj));
+            document.location = "login.html";
+         }
+    }
+    let nav_login = document.querySelector(".nav_login");
+
+    nav_login.addEventListener("click", loginpagemove);
+
+    function loginpagemove() {
+        document.location = "login.html";
+    }
+    let nav_signup = document.querySelector(".nav_signup");
+
+    nav_signup.addEventListener("click", signuppagemove1);
+
+    function signuppagemove1() {
+        document.location = "signup.html";
+    }
+</script>
