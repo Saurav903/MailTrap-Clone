@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="loginstyle.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     
 </head>
@@ -23,14 +23,16 @@
         <div class="left">
             
             <form>
-                <h1>Create Free Account</h1>
+                <h1>Log In</h1>
+                <a href="#"><p><i class="fa fa-google fa-2x"></i>   Use Google account</p></a>
+                <a href="#"><p><i class="fa fa-github fa-2x"></i>   Use Github account</p></a>
+                <a href="#"><p><i class="fa fa-windows fa-2x"></i>   Use Office 365 account</p></a>
+                <p>OR</p>
                 <label for="">Email</label>
-                <input id="email"  type="email" placeholder="Enter email"/>
+                <input id="email" type="email" placeholder="Enter Email"/>
                 <label for="">Password</label>
-                <input id="password"  type="password" placeholder="Enter Password" />
-                <label for="">Confirmation</label>
-                <input id="confirmation" type="password" placeholder="confirmation" />
-                <input value="submit" type="submit">
+                <input id="password" type="password" placeholder="Enter Password"/>
+                <a class="green" href="">Submit</a>
             </form>
             <div class="mid">
                 <p>By creating a Mailtrap account, you agree to our</p>
@@ -40,7 +42,7 @@
             
         </div>
         <div class="right">
-            <div><img src="https://assets.mailtrap.io/packs/assets/landing/signup-29d04f096f43afe622ed.svg" alt=""></div>
+            <div><img src="https://assets.mailtrap.io/packs/assets/landing/login-fb2fcb15feb36d8e9356.svg" alt=""></div>
             <div class="right_flex">
                 <img src="https://assets.mailtrap.io/packs/assets/landing/no-cc-f64815040928cb2cd45e.svg" alt="">
                 <h4>No credit card needed</h4>
@@ -86,39 +88,4 @@
     </div>
 </body>
 </html>
-<script>
-    let form = document.querySelector("form");
-
-    form.addEventListener("submit", datastore);
-
-    let arrData = [];
-
-    function datastore(e) {
-        e.preventDefault();
-        if(form.email.value=="" || form.password.value=="" || form.confirmation.value=="") {
-            alert("Fill the form");
-        } else {
-            let obj = {
-            email: form.email.value,
-            password: form.password.value,
-            };
-            arrData.push(obj);
-            localStorage.setItem("input", JSON.stringify(arrData));
-            document.location = "login.html";
-         }
-    }
-    let nav_login = document.querySelector(".nav_login");
-
-    nav_login.addEventListener("click", loginpagemove);
-
-    function loginpagemove() {
-        document.location = "login.html";
-    }
-    let nav_signup = document.querySelector(".nav_signup");
-
-    nav_signup.addEventListener("click", signuppagemove1);
-
-    function signuppagemove1() {
-        document.location = "signup.html";
-    }
-</script>
+<script src="loginjs.js"></script>
