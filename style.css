@@ -24,7 +24,6 @@ body {
     height: 80px;
     background-color: #f9f9f7;
 }
-
 #navbar>div>ul {
     display: inline-flex;
     list-style: none;
@@ -86,6 +85,9 @@ body {
 }
 .fa.fa-chevron-down {
     padding-left: 5px;
+}
+#navbar>#bar {
+    display: none;
 }
 
 /* all navbar inside */
@@ -575,4 +577,287 @@ body {
 }
 .social>a:hover {
     color: #5f74a1;
+}
+
+@media all and (min-width: 501px) and (max-width: 800px) {
+    #navbar>div {
+        font-size: 10px;
+        justify-content: center;
+    }
+    #navbar>div>ul {
+        padding-left: 50px;
+    }
+    #navbar>div:nth-child(1) {
+   
+        width: 13%;
+    }
+    #navbar>div:nth-child(3)>button {
+        /* padding: 3px 3px; */
+        font-size: 8px;
+        padding: 1px 1px;
+    }
+    .sub-nav1 {
+        width: 30%;
+    }
+    .sub-nav2 {
+        width: 30%;
+    }
+    #below_nav {
+        width: 100%;
+        /* margin: auto; */
+        font-size: 15px;
+    }
+    #below_nav>h1 {
+        font-size: 25px;
+    }
+    #below_nav>p {
+        font-size: 13px;
+    }
+    #below_nav2 {
+        /* padding-left: 150px; */
+        width: 50%;
+        /* margin: auto; */
+    }
+    #below_nav3 {
+        /* padding-left: 150px; */
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #below_nav4 {
+        /* padding-left: 150px; */
+        width: 90%;
+    }
+    .hone1 {
+        /* padding-left: 150px; */
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    #below_nav5 {
+        /* padding-left: 140px; */
+        width: 100%;
+        /* height: 500px; */
+        background-color: #f9f9f7;
+    }
+    .below_nav5_div {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        gap: 0;
+        row-gap: 0px;
+    }
+    .below_nav5_div>div>div {
+        width: 100%;
+        font-size: 11px;
+        /* padding-bottom: -250px; */
+        /* gap: 0; */
+    }
+    #below_nav6>h1 {
+        width: 100%;
+    }
+    #below_nav6>img {
+        width: 100%;
+    }
+    #below_nav7 {
+        font-size: 12px;
+        width: 100%;
+    }
+    #area {
+        width: 70%;
+        margin: auto;
+    }
+    .carousel-container {
+        width: 100%;
+        /* height: auto; */
+    }
+    #below_nav8 {
+        width: 100%;
+        margin: auto;
+    }
+    #below_nav8>h1 {
+        width: 100%;
+        font-size: 19px;
+    }
+    #below_nav9 {
+        width: 100%;
+        margin: auto;
+    }
+    #below_nav9>div {
+        width: 100%;
+        font-size: 12px;
+    }
+    #footer {
+        width: 100%;
+        font-size: 11px;
+        /* margin: auto; */
+        justify-content: center;
+        /* padding-left: 0px; */
+    }
+    #footer>div {
+        padding-left: 0px;
+    }
+    #below_nav4 {
+        width: 90%;
+        font-size: 12px;
+        gap: 5px;
+        margin: auto;
+    }
+    #below_nav4>div {
+        justify-content: center;
+    }
+}
+@media all and (min-width: 300px) and (max-width: 500px) {
+    #navbar>div:nth-child(1)>a>img {
+        width: 150%;
+    }
+    #navbar>div:nth-child(3) {
+        display: none;
+    }
+    #navbar>div:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #navbar>#bar:hover #navbar>div:nth-child(2) {
+        display: grid;
+        position: absolute;
+    }
+    #navbar>div {
+        font-size: 10px;
+        justify-content: center;
+    }
+    #navbar>div>ul {
+        padding-left: 50px;
+    }
+    #navbar>div:nth-child(1) {
+   
+        width: 13%;
+    }
+    #navbar>div:nth-child(3)>button {
+        /* padding: 3px 3px; */
+        font-size: 8px;
+        padding: 1px 1px;
+    }
+    .sub-nav1 {
+        width: 50%;
+        font-size: 5px;
+    }
+    .sub-nav2 {
+        width: 50%;
+        left: 40%;
+    }
+    #below_nav {
+        width: 100%;
+        /* margin: auto; */
+        font-size: 15px;
+    }
+    #below_nav>h1 {
+        font-size: 25px;
+    }
+    #below_nav>p {
+        font-size: 13px;
+    }
+    #below_nav2 {
+        /* padding-left: 150px; */
+        width: 50%;
+        /* margin: auto; */
+    }
+    #below_nav3 {
+        /* padding-left: 150px; */
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #below_nav4 {
+        /* padding-left: 150px; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hone1 {
+        /* padding-left: 150px; */
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    #below_nav5 {
+        /* padding-left: 140px; */
+        width: 100%;
+        /* height: 500px; */
+        background-color: #f9f9f7;
+    }
+    .below_nav5_div {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        gap: 0;
+        row-gap: 0px;
+    }
+    .below_nav5_div>div>div {
+        width: 100%;
+        font-size: 11px;
+        /* padding-bottom: -250px; */
+        /* gap: 0; */
+    }
+    #below_nav6>h1 {
+        width: 100%;
+        /* margin-top: -50px; */
+        padding-top: 50px;
+    }
+    #below_nav6>img {
+        width: 100%;
+    }
+    #below_nav7 {
+        font-size: 12px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #area {
+        width: 100%;
+        margin: auto;
+    }
+    .carousel-container {
+        width: 100%;
+        /* height: auto; */
+        font-size: 10px;
+    }
+    #below_nav8 {
+        width: 100%;
+        margin: auto;
+    }
+    #below_nav8>h1 {
+        width: 100%;
+        font-size: 19px;
+    }
+    #below_nav9 {
+        width: 100%;
+        margin: auto;
+    }
+    #below_nav9>div {
+        width: 90%;
+        font-size: 7px;
+    }
+    #footer {
+        width: 100%;
+        font-size: 9px;
+        /* margin: auto; */
+        justify-content: center;
+        /* padding-left: 0px; */
+    }
+    #footer>div {
+        padding-left: 0px;
+    }
+    #footer>div>ul>li {
+        line-height: 25px;
+    }
+    #below_nav4 {
+        width: 90%;
+        font-size: 12px;
+        gap: 5px;
+        margin: auto;
+    }
+    #below_nav4>div {
+        justify-content: center;
+    }
 }
